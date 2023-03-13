@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/css_main/style.css">
+        <link rel="stylesheet" href="assets/css/css_media/media.css">
+        <title>Rock Paper Scissors</title>
+    </head>
+
+    <body>
+        <h1 class="text"><label data-human-score>0</label>:<label data-mach-score>0</label></h1>
+        <div class="section-wrapper">
+            <section>
+                <div class="block human">
+                    <div class="photo">
+                        <h1>HUMAN</h1>
+                        <img data-photo-human src="assets/images/Black_question_mark.png" width="230" height="200">
+                    </div>
+                    <div class="buttons">
+                        <button data-btn="rock">ROCK</button>
+                        <button data-btn="paper">PAPER</button>
+                        <button data-btn="scissors">SCISSORS</button>
+                    </div>
+                    <div class="play-btn">
+                        <button data-play>PLAY</button>
+                    </div>
+                    <h1 data-human class="green hum"></h1>
+                </div>
+                <div class="block machine">
+                    <div class="photo">
+                        <h1>MACHINE</h1>
+                        <img data-photo-machine src="assets/images/Black_question_mark.png" width="230" height="200">
+                    </div>
+                    <div id="machine-result"></div>
+                    <div style="display: none;" class="loading">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <h1 data-mach class="green"></h1>
+                </div>
+            </section>
+        </div>
+
+        <script src="java_script/core.js"></script>
+    </body>
+</html>
